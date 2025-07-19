@@ -1,0 +1,65 @@
+/* style.css */
+
+/* Main page background */
+body {
+  margin: 0;
+  padding: 0;
+  background: url("assets/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container to hold everything */
+.main-container {
+  position: relative;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4); /* optional dark overlay */
+}
+
+/* Weather card styling */
+.weather-card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #ffffff30;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}
+
+/* Weather icon in center */
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+/* Forecast day cards */
+.forecast-row .forecast-day {
+  flex: 1;
+  color: #fff;
+}
+
+.forecast-day img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Sidebar buttons */
+.sidebar {
+  position: absolute;
+  top: 30%;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.sidebar i {
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.sidebar i:hover {
+  transform: scale(1.2);
+}
